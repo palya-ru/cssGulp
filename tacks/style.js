@@ -12,7 +12,7 @@ const {SRC, DIST, NORMALISE} = require('./../gulp.config');
 const env = process.env.NODE_ENV;
 
 function styles(){
-    return src([...NORMALISE,`${SRC}/styles/main.scss`])
+    return src([/*...NORMALISE,*/`${SRC}/styles/main.scss`])
         .pipe(gulpIf(env === 'dev', sourcemaps.init()))
         .pipe(concat('main.css'))
         .pipe(sassGlob())

@@ -14,7 +14,13 @@
     "normalise.scss": "^1.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
+    "core-js": "^3.20.2",
     "cross-env": "^7.0.3",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
@@ -24,6 +30,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.45.2"
+    "sass": "^1.45.2",
+    "webpack": "^5.65.0",
+    "webpack-stream": "^7.0.0"
   }
 }

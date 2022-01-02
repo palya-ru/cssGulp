@@ -5,6 +5,7 @@ const browserSync = require('browser-sync');
 function serve(){
     const copyHtml = require('./copyHtml.js')
     const styles = require('./style.js');
+    const devJs = require('./js-dev.js')
     browserSync.init({
         server: {
             baseDir: DIST,
@@ -15,6 +16,7 @@ function serve(){
     });
     watch(`${SRC}/*.html`, series(copyHtml));
     //watch(`${SRC}/img/**/*.*`, series("copy:img"));
+    watch(`${SRC}/js/**/*.js`, series(devJs));
     watch(`${SRC}/styles/**/*.scss`, series(styles));
     //watch("./src/img/icons/!*.svg", series("icons"));
 }
