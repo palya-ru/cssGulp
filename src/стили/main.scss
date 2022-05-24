@@ -13,6 +13,15 @@
   content: "";
   display: table;
 }
+body{
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #1B232B;
+  line-height: 1.4;
+}
+input, textarea, select, button {
+  font: inherit;
+}
 .visually-hidden{
   position: absolute;
   height: 1px;
